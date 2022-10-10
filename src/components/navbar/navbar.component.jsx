@@ -15,7 +15,7 @@ import photoUrl from '../../profile.jpeg'
 const user = { name: 'test', photoUrl }
 
 const NavBar = () => {
-  const { currentUser, setCurrentUser } = useContext(Context)
+  const { currentUser, setCurrentUser, setOpenLogin } = useContext(Context)
   return (
     <AppBar>
       <Container maxWidth='lg'>
@@ -45,7 +45,7 @@ const NavBar = () => {
             <Button
               color='inherit'
               startIcon={<Lock />}
-              onClick={() => setCurrentUser(user)}
+              onClick={() => setOpenLogin()}
             >
               Login
             </Button>
