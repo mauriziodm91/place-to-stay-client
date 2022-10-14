@@ -49,7 +49,6 @@ const Login = () => {
   useEffect(() => {
     isRegister ? setTitle('Register') : setTitle('Login')
   }, [isRegister])
-
   return (
     <Dialog open={openLogin} onClose={setCloseLogin}>
       <DialogTitle>
@@ -94,7 +93,6 @@ const Login = () => {
             type='email'
             fullWidth
             inputRef={emailRef}
-            inputProps={{ minLength: 2 }}
             required
           />
           <PasswordField {...{ passwordRef }} />
