@@ -11,11 +11,9 @@ import {
 import { Menu, Lock } from '@mui/icons-material'
 import { Context } from '../../context/contextprovider.context'
 import UserIcon from '../userIcon/userIcon.component'
-import photoUrl from '../../profile.jpeg'
-const user = { name: 'test', photoUrl }
 
 const NavBar = () => {
-  const { currentUser, setCurrentUser, setOpenLogin } = useContext(Context)
+  const { currentUser, setOpenLogin } = useContext(Context)
   return (
     <AppBar>
       <Container maxWidth='lg'>
